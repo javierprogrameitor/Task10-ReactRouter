@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useGifts } from "../context/GiftContext";
-import giftNotSelect from "../img/error-500.jpg";
+
 
 
 export default function GiftList() {
@@ -15,7 +15,7 @@ export default function GiftList() {
         <div>
           <p className="text-center text-lg text-fuchsia-600">There are no gifts selected</p>
           <div className="flex items-center justify-center">
-            <img src={giftNotSelect} alt="gift"/>
+            <img src="./error-500.jpg" alt="gift"/>
           </div>
         </div>
       ) : (

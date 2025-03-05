@@ -1,7 +1,7 @@
 // src/pages/GiftDetails.jsx
 import { useParams, useNavigate } from 'react-router-dom';
 import { useGifts } from '../context/GiftContext';
-import giftNotFound from '../img/error-404.webp';
+
 
 export default function GiftDetails() {
   const { id } = useParams();
@@ -17,7 +17,7 @@ export default function GiftDetails() {
           <h2 className="text-center text-2xl font-bold mb-4">Gift not found</h2>
         </div>
         <div className="flex items-center justify-center h-full p-2">
-          <img src={giftNotFound} alt="gift" className="w-1/3 h-1/3" />
+          <img src="../error-404.webp" alt="gift" className="w-1/3 h-1/3" />
         </div>
       </>
     );

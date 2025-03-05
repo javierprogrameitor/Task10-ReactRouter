@@ -21,7 +21,6 @@ function App() {
           <Route path="/add" element={<GiftForm />} />
           <Route path="/details/:id" element={<GiftDetails />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="https://task10-react-router.vercel.app/*" element={<NotFound />} />
         </Routes>
       </Router>
     </GiftProvider>
